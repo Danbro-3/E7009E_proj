@@ -1,0 +1,24 @@
+** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schematic1\sim.sim ] 
+
+** Creating circuit file "SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of H:\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "C:\OrCAD\OrCAD_16.6\tools\pspice\library\phil_bjt.lib" 
+.lib "C:\OrCAD\OrCAD_16.6\tools\pspice\library\ebipolar.lib" 
+.lib "C:\OrCAD\OrCAD_16.6\tools\pspice\library\pwrmos.lib" 
+.lib "C:\OrCAD\OrCAD_LTU\LTU10.lib" 
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 40m 0 1u 
+.FOUR 1k 20 V([OUT]) 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

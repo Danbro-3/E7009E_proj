@@ -1,0 +1,7 @@
+ lib=C:\OrCAD\OrCAD_16.6\tools\pspice\library\phil_bjt.lib, offset=88244, size=621
+ lib=C:\OrCAD\OrCAD_16.6\tools\pspice\library\phil_bjt.lib, offset=88866, size=613
+ lib=C:\OrCAD\OrCAD_16.6\tools\pspice\library\ebipolar.lib, offset=10931, size=364
+ lib=C:\OrCAD\OrCAD_16.6\tools\pspice\library\ebipolar.lib, offset=6349, size=365
+ lib=C:\OrCAD\OrCAD_16.6\tools\pspice\library\pwrmos.lib, offset=57018, size=333
+ lib=C:\OrCAD\OrCAD_16.6\tools\pspice\library\pwrmos.lib, offset=85102, size=340
+ lib=C:\OrCAD\OrCAD_16.6\tools\PSpice\Library\eval.lib, offset=21641, size=161

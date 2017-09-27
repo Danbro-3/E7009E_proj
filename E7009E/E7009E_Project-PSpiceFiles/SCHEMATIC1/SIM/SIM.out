@@ -1,0 +1,370 @@
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of H:\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "C:\OrCAD\OrCAD_16.6\tools\pspice\library\phil_bjt.lib" 
+.lib "C:\OrCAD\OrCAD_16.6\tools\pspice\library\ebipolar.lib" 
+.lib "C:\OrCAD\OrCAD_16.6\tools\pspice\library\pwrmos.lib" 
+.lib "C:\OrCAD\OrCAD_LTU\LTU10.lib" 
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 40m 0 1u 
+.FOUR 1k 20 V([OUT]) 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source E7009E_PROJECT
+V_V1         VDD 0 25V
+V_V2         0 VSS 25V
+C_C1         0 VDD  100n  TC=0,0 
+C_C2         VSS 0  100n  TC=0,0 
+C_C3         0 VDD  220n  TC=0,0 
+C_C4         VSS 0  220n  TC=0,0 
+Q_Q1         N01416 N02010 N01098 BC556B 
+Q_Q2         N01246 IN N01109 BC556B 
+Q_Q3         N01250 N01514 N01122 BC556B 
+R_R1         0 IN  47k TC=0,0 
+R_R2         VSS N01254  68 TC=0,0 
+R_R3         VSS N01258  68 TC=0,0 
+R_R4         N01109 N01416  100 TC=0,0 
+R_R5         N01122 N01416  100 TC=0,0 
+R_R6         N01098 VDD  150 TC=0,0 
+Q_Q5         N01246 N01250 N01254 BC546B 
+Q_Q6         N01250 N01250 N01258 BC546B 
+Q_Q8         0 N01246 N03081 BC546B 
+R_R9         N01514 FB  33k TC=0,0 
+R_R10         N22260 N01514  4.7k TC=0,0 
+R_R12         N015691 N01514  330 TC=0,0 
+C_C6         N015691 FB  15p  TC=0,0 
+C_C7         0 N01784  220u  TC=0,0 
+D_D1         0 N01784 D1N4148 
+R_R13         N02010 N02019  2.2k TC=0,0 
+R_R14         N03333 N02183  15 TC=0,0 
+R_R15         N02197 N02183  1k TC=0,0 
+R_R16         N36955 N02197  220 TC=0,0 
+C_C8         N02167 N02183  4.7u  TC=0,0 
+C_C9         N01246 N02167  2.2n  TC=0,0 
+Q_Q9         N02167 N03081 VSS BC546B 
+R_R18         VSS N03081  1k TC=0,0 
+R_R20         N04179 VDD  100 TC=0,0 
+R_R21         N04325 VDD  1k TC=0,0 
+R_R22         N09369 N04325  100 TC=0,0 
+R_R23         FB N04566  .22 TC=0,0 
+R_R24         N04859 FB  .22 TC=0,0 
+R_R25         N04677 N13768  100 TC=0,0 
+R_R26         VSS N04677  1k TC=0,0 
+L_L1         FB OUT  1u  
+R_R29         FB OUT  10 TC=0,0 
+R_R30         N054021 FB  10 TC=0,0 
+C_C13         0 N054021  47n  TC=0,0 
+R_R_Last         0 OUT  6.8 TC=0,0 
+Q_Q15         N03333 N02197 N02167 QBD135/PLP 
+Q_Q16         N04325 N02183 N29250 QBD135/PLP 
+Q_Q17         N04677 N02167 N29305 QBD136/PLP 
+M_M5         N04859 N13768 VSS VSS IRF530
+M_M7         N04566 N09369 VDD VDD IRF9530
+Q_Q18         N02183 N02019 N04179 BC556B 
+Q_Q19         N02010 N16172 VDD BC556B 
+R_R31         N16172 N01098  1k TC=0,0 
+C_C14         N04566 N18218  100n  TC=0,0 
+C_C15         VSS N18171  100n  TC=0,0 
+R_R32         N18218 VDD  1k TC=0,0 
+R_R33         N18171 N04859  1k TC=0,0 
+R_R35         N22260 N01514  4.7k TC=0,0 
+R_R36         N01784 N22260  400 TC=0,0 
+C_C17         IN N00802  220n  TC=0,0 
+R_R37         0 N24750  47k TC=0,0 
+V_V4         N24750 0  
++PULSE 0 1.41 1m .1n .1n 1 2
+V_V3         N00802 0  AC 1
++SIN 0 1.41 1k 0 0 0
+R_R38         N02010 N30962  10k TC=0,0 
+C_C19         N30962 VDD  4.7u  TC=0,0 
+R_R39         0 N30962  10k TC=0,0 
+R_R40         N04566 N29250  47 TC=0,0 
+R_R41         N04859 N29305  47 TC=0,0 
+R_R42         N29250 0  47 TC=0,0 
+R_R43         0 N29305  47 TC=0,0 
+R_R44         N02167 N36955  670 TC=0,0 
+C_C20         N01246 N02167  470p  TC=0,0 
+C_C21         IN N00802  100n  TC=0,0 
+
+**** RESUMING SIM.cir ****
+.END
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBD135/PLP      QBD136/PLP      BC556B          BC546B          
+               NPN             PNP             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS   48.150000E-15   74.010000E-15    1.020000E-15    7.049000E-15 
+          BF  124.2           336.5           306.5           374.6          
+          NF     .9897           .9938          1               1            
+         VAF  222              22.47           52.31           62.79         
+         IKF    1.6              .1689           .09185          .08157      
+         ISE   13.890000E-15  410.400000E-18   10.270000E-15   68.000000E-15 
+          NE    1.6             1.054           1.764           1.576        
+          BR   13.26           13.91            7.437           1            
+          NR     .9895           .9913          1               1            
+         VAR   81.4            30                                            
+         IKR     .29             .09888         1.7             3.924        
+         ISC  129.500000E-15   12.900000E-15    1.020000E-15   12.400000E-15 
+          NC    1.183           1.1             1.63            1.835        
+          NK                                     .5351           .4767       
+         ISS    0               0               0               0            
+          RB     .5              .5                                          
+         RBM     .5              .5                                          
+         IRB    1.000000E-06    1.000000E-06                                 
+          RE     .165            .208           0               0            
+          RC     .096            .05526         1.162            .9747       
+         CJE  124.300000E-12  106.600000E-12   30.000000E-12   11.500000E-12 
+         VJE     .7313           .69             .5              .5          
+         MJE     .3476           .3676           .3333           .6715       
+         CJC   30.400000E-12   52.340000E-12    9.810000E-12    5.250000E-12 
+         VJC     .5642           .6431           .4865           .5697       
+         MJC     .4371           .4436           .332            .3147       
+        XCJC     .15             .44            1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+         MJS     .333            .333                                        
+          FC     .9359           .99                                         
+          TF  647.800000E-12  257.800000E-12  611.600000E-12  410.200000E-12 
+         XTF   29              13.56           25.92           40.06         
+         VTF    2.648           2.366          10              10            
+         ITF    3.35            1.304           1.37            1.491        
+          TR    0             100.000000E-27   10.000000E-09   10.000000E-09 
+         XTB                                    1.5             1.5          
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.2             2.42         
+           D     .87             .52             .52             .87         
+
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF530          IRF9530         
+               NMOS            PMOS            
+       LEVEL    3               3            
+           L    2.000000E-06    2.000000E-06 
+           W     .68            1.4          
+         VTO    3.191          -3.745        
+          KP   20.730000E-06   10.570000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          RD     .03869          .06613      
+          RS     .05853          .1576       
+          RG    4.63            3.519        
+         RDS  444.400000E+03  444.400000E+03 
+          IS    1.861000E-12    2.938000E-18 
+          JS    0               0            
+           N                    2            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    1.151000E-09    1.249000E-09 
+          CJ    0               0            
+        CJSW    0               0            
+          TT  125.000000E-09  290.000000E-09 
+        CGSO  876.700000E-12    1.578000E-09 
+        CGDO  261.400000E-12  115.500000E-12 
+        CGBO    0               0            
+         TOX  100.000000E-09  100.000000E-09 
+          XJ    0               0            
+          UO                  300            
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA    0               0            
+         ETA    0               0            
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   FB)     .0770  (   IN)     .2604  (  OUT)     .0770  (  VDD)   25.0000      
+
+(  VSS)  -25.0000  (N00802)    0.0000 (N01098)   24.2780 (N01109)     .9879     
+
+(N01122)     .9867 (N01246)  -23.6460 (N01250)  -24.1500 (N01254)  -24.8370     
+
+(N01258)  -24.8370 (N01416)    1.2274 (N01514)     .2594 (N01784)     .2593     
+
+(N02010)   23.5320 (N02019)   23.5680 (N02167)    -.6600 (N02183)     .7791     
+
+(N02197)    -.0051 (N03081)  -24.2930 (N03333)     .6901 (N04179)   24.3230     
+
+(N04325)   21.1140 (N04566)     .0912 (N04677)  -21.6860 (N04859)     .0653     
+
+(N09369)   21.1140 (N13768)  -21.6860 (N16172)   24.2820 (N18171)     .0653     
+
+(N18218)   25.0000 (N22260)     .2593 (N24750)    0.0000 (N29250)     .1376     
+
+(N29305)    -.0454 (N30962)   11.7660 (N36955)    -.1670 (N015691)     .2594    
+
+(N054021)     .0770                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.002E-02
+    V_V2        -6.627E-02
+    V_V4         0.000E+00
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   3.66E+00  WATTS
+
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     FOURIER ANALYSIS                 TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+FOURIER COMPONENTS OF TRANSIENT RESPONSE V(OUT)
+
+
+
+ DC COMPONENT =   6.232841E-02
+
+ HARMONIC   FREQUENCY    FOURIER    NORMALIZED    PHASE        NORMALIZED
+    NO         (HZ)     COMPONENT    COMPONENT    (DEG)       PHASE (DEG)
+
+     1     1.000E+03    1.833E+01    1.000E+00   -3.528E-01    0.000E+00
+     2     2.000E+03    3.312E-03    1.807E-04   -1.472E+02   -1.465E+02
+     3     3.000E+03    1.454E-03    7.931E-05   -8.236E+01   -8.130E+01
+     4     4.000E+03    1.609E-03    8.778E-05   -1.153E+02   -1.139E+02
+     5     5.000E+03    1.180E-03    6.436E-05   -6.594E+01   -6.418E+01
+     6     6.000E+03    1.135E-03    6.193E-05   -9.455E+01   -9.244E+01
+     7     7.000E+03    9.101E-04    4.965E-05   -4.914E+01   -4.667E+01
+     8     8.000E+03    8.009E-04    4.369E-05   -8.098E+01   -7.816E+01
+     9     9.000E+03    6.364E-04    3.472E-05   -3.200E+01   -2.882E+01
+    10     1.000E+04    5.138E-04    2.803E-05   -7.392E+01   -7.040E+01
+    11     1.100E+04    3.916E-04    2.137E-05   -5.215E+00   -1.334E+00
+    12     1.200E+04    2.769E-04    1.511E-05   -8.353E+01   -7.930E+01
+    13     1.300E+04    2.243E-04    1.224E-05    3.633E+01    4.091E+01
+    14     1.400E+04    1.930E-04    1.053E-05   -1.262E+02   -1.213E+02
+    15     1.500E+04    2.334E-04    1.273E-05    8.840E+01    9.369E+01
+    16     1.600E+04    2.626E-04    1.433E-05   -1.551E+02   -1.494E+02
+    17     1.700E+04    3.021E-04    1.648E-05    1.197E+02    1.257E+02
+    18     1.800E+04    3.384E-04    1.846E-05   -1.605E+02   -1.542E+02
+    19     1.900E+04    3.518E-04    1.920E-05    1.285E+02    1.352E+02
+    20     2.000E+04    3.564E-04    1.945E-05   -1.603E+02   -1.532E+02
+
+
+     TOTAL HARMONIC DISTORTION =   2.523217E-02 PERCENT
+
+
+          JOB CONCLUDED
+
+**** 09/27/17 20:24:07 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIM"  [ \\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project-pspicefiles\schemat
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        4.22
+

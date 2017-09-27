@@ -1,0 +1,157 @@
+(ExpressProject "E7009E_Project"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\e7009e_project.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\e7009e_project-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\e7009e_project-pspicefiles\schematic1\sim.sim"
+        (DisplayName "SCHEMATIC1-SIM")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\e7009e_project-pspicefiles\schematic1\slew rate.sim"
+        (DisplayName "SCHEMATIC1-Slew rate")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\e7009e_project-pspicefiles\schematic1\sim.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C_elect
+      (FullPartName "C_elect.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (BC556B
+      (FullPartName "BC556B.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\EBIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (IRF9530
+      (FullPartName "IRF9530.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_LTU\LTU10.OLB")
+      (DeviceIndex "0"))
+    (IRF530
+      (FullPartName "IRF530.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_LTU\LTU10.OLB")
+      (DeviceIndex "0"))
+    (BD136/PLP
+      (FullPartName "BD136/PLP.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_BJT.OLB")
+      (DeviceIndex "0"))
+    (BD135/PLP
+      (FullPartName "BD135/PLP.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_BJT.OLB")
+      (DeviceIndex "0"))
+    (BD136
+      (FullPartName "BD136.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJP.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (BC556
+      (FullPartName "BC556.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJP.OLB")
+      (DeviceIndex "0"))
+    (BD135
+      (FullPartName "BD135.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (R_var
+      (FullPartName "R_var.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (BC546B
+      (FullPartName "BC546B.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\EBIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\OrCAD\OrCAD_16.6\tools\capture\library")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "\\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project.dsn")
+      (Path "Design Resources"
+         "\\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "\\ltufs.ltuad.ltu.se\students\danbro-3\Documents\Documents\E7009E\e7009e_project.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 604"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 131 1740 92 616")
+        (Scroll "0 182")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "\\LTUFS.LTUAD.LTU.SE\STUDENTS\DANBRO-3\DOCUMENTS\DOCUMENTS\E7009E\E7009E_PROJECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "danbro-3"))
