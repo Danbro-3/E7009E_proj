@@ -1,4 +1,4 @@
-update=2017-09-27 23:13:35
+update=2017-09-28 15:17:55
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=irf9530
+LibName30=Custom_Lib/IRF

@@ -3,7 +3,7 @@
   (general
     (links 113)
     (no_connects 0)
-    (area 184.324555 68.674999 254.775001 126.325001)
+    (area 183.316667 55.134999 274.950983 127.000001)
     (thickness 1.6)
     (drawings 7)
     (tracks 745)
@@ -86,7 +86,7 @@
       (plotframeref false)
       (viasonmask false)
       (mode 1)
-      (useauxorigin true)
+      (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15)
